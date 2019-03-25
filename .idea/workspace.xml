@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a535a16-3202-464b-b9a7-2cb22f967d65" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutomationFramework/src/main/java/Browser/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationFramework/src/main/java/Browser/Driver.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,23 +27,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutomationFramework/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="124">
               <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutomationFramework/src/main/java/Browser/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
+                <element signature="method#OpenBrowser#0;class#Driver#0" />
                 <element signature="e#767#768#0" expanded="true" />
                 <element signature="e#791#792#0" expanded="true" />
                 <element signature="e#850#851#0" expanded="true" />
                 <element signature="e#874#875#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/resources/config/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -67,6 +76,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/AutomationFramework/pom.xml" />
         <option value="$PROJECT_DIR$/AutomationFramework/src/main/java/Browser/Driver.java" />
+        <option value="$PROJECT_DIR$/Config/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/Utilities/WebReadConfigMain.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Utilities/WebGetPropertyValues.java" />
+        <option value="$PROJECT_DIR$/src/test/java/resources/config/config.properties" />
       </list>
     </option>
   </component>
@@ -98,37 +111,36 @@
             <path>
               <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationFramework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="AutomationFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebAutomation.Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebAutomationMaven" type="b2602c69:ProjectViewProjectNode" />
@@ -146,7 +158,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553500992454" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553502809156" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/maven-clean-plugin-2.5.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -155,6 +167,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Repository\WebAutomation.Maven\src\test\java\resources\config" />
       <recent name="E:\Repository\WebAutomation.Maven\AutomationFramework\src\main\java" />
     </key>
   </component>
@@ -169,6 +182,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebReadConfigMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utilities.WebReadConfigMain" />
+      <module name="WebAutomation.Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebReadConfigMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -197,9 +230,10 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,21 +258,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AutomationFramework/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="124">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AutomationFramework/src/main/java/Browser/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
+            <element signature="method#OpenBrowser#0;class#Driver#0" />
             <element signature="e#767#768#0" expanded="true" />
             <element signature="e#791#792#0" expanded="true" />
             <element signature="e#850#851#0" expanded="true" />
             <element signature="e#874#875#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utilities/WebGetPropertyValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utilities/WebReadConfigMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
