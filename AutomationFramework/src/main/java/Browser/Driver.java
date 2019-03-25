@@ -3,10 +3,10 @@ package Browser;
 public class Driver {
 
     public static IWebDriver WebDriver;
-    string Firefox="Firefox";
-    string Chrome = "Chrome";
+    public static final String Firefox="Firefox";
+    public static final String Chrome = "Chrome";
 
-    public static IWebDriver OpenBrowser(string browserName)
+    public static IWebDriver OpenBrowser(String browserName)
     {
         WebDriver = null;
         switch (browserName)
@@ -33,7 +33,7 @@ public class Driver {
         return WebDriver;
     }
 
-    public static void Visit(string URL)
+    public static void Visit(String URL)
     {
         WebDriver.get(URL);
     }
