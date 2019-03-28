@@ -1,5 +1,6 @@
 package Browser;
 
+import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
@@ -13,13 +14,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
-import java.util.concurrent.TimeUnit;
-
-public class Browser {
-
+public class Driver {
     static WebDriver driver;
 
-    public Browser(){
+    public Driver(){
 //		this.setWebDriver(createInstance("Chrome"));
     }
 
@@ -74,9 +72,9 @@ public class Browser {
                 break;
         }
         // maximize browser's window on start
-//		driver.manage().window().maximize();
-        driver.manage().window().setPosition(new Point(0,0));
-        driver.manage().window().setSize(new Dimension(1920, 1080));
+		driver.manage().window().maximize();
+//        driver.manage().window().setPosition(new Point(0,0));
+//        driver.manage().window().setSize(new Dimension(1920, 1080));
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return driver;
