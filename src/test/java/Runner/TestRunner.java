@@ -5,8 +5,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = {"StepDefinitions"},
         features="src/test/resources/features/",
+        glue = {"StepDefinitions"},
         strict = true,
         monochrome = true)
 
