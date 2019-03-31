@@ -14,6 +14,6 @@ public class Hooks {
     @After
     public void After()
     {
-        Driver.Close();
+        Driver.CloseBrowser();
     }
 }

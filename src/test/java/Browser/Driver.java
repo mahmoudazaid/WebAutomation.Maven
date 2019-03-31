@@ -9,11 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-    static WebDriver driver;
+    public static WebDriver driver;
 
-    public Driver(){
-//		this.setWebDriver(createInstance("Chrome"));
-    }
     private static enum Browsers {
         FIREFOX, CHROME, SAFARI;
     }
@@ -47,7 +44,7 @@ public class Driver {
         driver.get(_url);
     }
 
-    public static void Close() {
+    public static void CloseBrowser() {
         driver.quit();
 
     }
