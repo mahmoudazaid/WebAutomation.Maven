@@ -16,7 +16,6 @@ public class Driver {
     }
 
     public static WebDriver OpenBrowser(String browserName) {
-
         browserName = (browserName != null) ? browserName : "CHROME";
 
         switch (Browsers.valueOf(browserName.toUpperCase())) {
@@ -41,7 +40,7 @@ public class Driver {
 
     public static void Visit(String _url)
     {
-        driver.get(_url);
+//        driver.get(_url);
     }
 
     public static void CloseBrowser() {

@@ -6,9 +6,11 @@ import cucumber.api.java.Before;
 import Browser.Driver;
 
 public class Hooks {
+    String browserName = System.getProperty("BROWSER");
+
     @Before()
     public void Before(){
-        Driver.OpenBrowser("CHROME");
+        Driver.OpenBrowser(browserName);
     }
 
     @After
