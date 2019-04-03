@@ -1,10 +1,9 @@
 package Runner;
 
+import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.CucumberOptions;
-import org.junit.runner.RunWith;
-import cucumber.api.junit.Cucumber;
+import org.testng.annotations.Test;
 
-@RunWith(Cucumber.class)
 @CucumberOptions(
 
         glue = {"Runner","StepDefinitions"},
@@ -13,4 +12,8 @@ import cucumber.api.junit.Cucumber;
         monochrome = true)
 
 public class TestRunner {
+    @Test(description = "Example of using TestNGCucumberRunner to invoke Cucumber")
+    public void runCukes() {
+        new TestNGCucumberRunner(getClass()).runCukes();
+    }
 }

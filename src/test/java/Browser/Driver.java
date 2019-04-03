@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -24,8 +25,12 @@ public class Driver {
                 driver = new FirefoxDriver();
                 break;
             case CHROME:
-                ChromeDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                String proxy = "10.179.8.20:8080";
+//                ChromeDriverManager.chromedriver().setup();
+                ChromeOptions options = new ChromeOptions().addArguments("--proxy-server=http://" + proxy);
+                driver = new ChromeDriver(options);
+                //driver = new ChromeDriver();
                 break;
             case SAFARI:
                 driver = new SafariDriver();
@@ -40,7 +45,7 @@ public class Driver {
 
     public static void Visit(String _url)
     {
-//        driver.get(_url);
+        driver.get(_url);
     }
 
     public static void CloseBrowser() {
