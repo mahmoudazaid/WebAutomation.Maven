@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d84a28c5-6636-4cb8-a909-c2523647c86a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElementParser/ElementParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElementParser/LocatorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElementParser/LocatorTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElementParser/ParsersManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElementParser/WebElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Browser/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Browser/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/MyStepdefs.java" afterDir="false" />
-    </list>
+    <list default="true" id="d84a28c5-6636-4cb8-a909-c2523647c86a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -280,7 +269,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554282283087" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554282299901" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="E:/automation-testing" />
@@ -460,7 +449,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
