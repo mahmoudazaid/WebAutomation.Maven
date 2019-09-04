@@ -1,5 +1,3 @@
-# WebAutomation.Maven
-
 <!-- PROJECT SHIELDS -->
 <p align="center">        
     <a href="http://maven.apache.org" alt="Maven">
@@ -9,3 +7,13 @@
     <a href="https://testng.org" alt="Maven">
         <img alt="TestNG" src="https://img.shields.io/badge/TestNG-v7.0.0-blue"></a>      
 </p>
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/mahmoudazaid/WebAutomation.Maven">
+    <img src="images/Logo.jpg" alt="Logo">
+  </a>
+
+  <h3 align="center">WebAutomation.Maven</h3>
+
