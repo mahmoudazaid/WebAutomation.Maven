@@ -12,8 +12,9 @@
 <br />
 <p align="center">
   <a href="https://github.com/mahmoudazaid/WebAutomation.Maven">
-    <img src="images/Logo.jpg" alt="Logo">
+    <img src="Images/Logo.jpg" alt="Logo">
   </a>
 
   <h3 align="center">WebAutomation.Maven</h3>
 
+# WebAutomation.Maven
