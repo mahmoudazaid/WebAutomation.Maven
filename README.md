@@ -16,5 +16,17 @@
   </a>
 
   <h3 align="center">WebAutomation.Maven</h3>
+   <p align="center">
+    <br />
+    <a href="#about-the-project"><strong>Read Instructions »</strong></a>
+    <br />
+    <br />  
+    <a href="https://github.com/mahmoudazaid/WebAutomation.Maven/wiki">Read the Wiki</a>
+    .
+    <a href="https://github.com/mahmoudazaid/WebAutomation.Maven/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/mahmoudazaid/WebAutomation.Maven/issues">Request Feature</a>
+  </p>
+</p>
 
 # WebAutomation.Maven
