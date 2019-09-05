@@ -31,7 +31,7 @@ public class UserRegisterationPage extends PageBase {
     @FindBy(id = "Email")
     WebElement emailTxt;
 
-    @FindBy (id = "Password")
+    @FindBy(id = "Password")
     WebElement passwordTxt;
 
     @FindBy(id = "ConfirmPassword")
@@ -40,24 +40,22 @@ public class UserRegisterationPage extends PageBase {
     @FindBy(id = "register-button")
     WebElement registerButton;
 
-    public  void userRegisteration(String firstName, String lastName, String email,String password,String confirmPassword){
-        genderRadioBtn.click();
+    @FindBy(xpath = "//div[@class='result']")
+    public WebElement successMessage;
 
-        firstNameTxt.clear();
-        firstNameTxt.sendKeys(firstName);
+    public void userRegisteration(String firstName, String lastName, String email, String password, String confirmPassword) {
+        clickButton(genderRadioBtn);
 
-        lastNameTxt.clear();
-        lastNameTxt.sendKeys(lastName);
+        typeText(firstNameTxt, firstName);
 
-        emailTxt.clear();
-        emailTxt.sendKeys(email);
+        typeText(lastNameTxt, lastName);
 
-        passwordTxt.clear();
-        passwordTxt.sendKeys(password);
+        typeText(emailTxt, email);
 
-        confirmPasswordTxt.clear();
-        confirmPasswordTxt.sendKeys();
+        typeText(passwordTxt, password);
 
-        registerButton.click();
+        typeText(confirmPasswordTxt, confirmPassword);
+
+        clickButton(registerButton);
     }
 }
