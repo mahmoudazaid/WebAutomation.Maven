@@ -42,3 +42,16 @@
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Contact](#contact)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+This project for build a powerful testing framework to test Web applications
+The website used for testing (http://demo.nopcommerce.com)
+
+### Built With
+The Framework built with below main packages
+* [Maven](http://maven.apache.org/)
+* [Selenium](https://www.seleniumhq.org/)
+* [TestNG](https://testng.org/doc/)
