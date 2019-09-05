@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browser" value="Firefox"></parameter>
+    <test name="Regression Test">
+        <classes>
+            <class name="tests.UserRegisterationTest"/>
+        </classes>
+    </test>
+</suite>
