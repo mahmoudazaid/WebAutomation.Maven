@@ -47,8 +47,8 @@
 
 ## About The Project
 
-This project for build a powerful testing framework to test Web applications
-The website used for testing (http://demo.nopcommerce.com)
+This project for build a powerful testing framework to test Web applications, the designe pattern that used POM,
+we are use (http://demo.nopcommerce.com) for testing purposes
 
 ### Built With
 The Framework built with below main packages
