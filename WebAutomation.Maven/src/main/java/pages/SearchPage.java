@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class SearchPage extends PageBase {
     public SearchPage(WebDriver driver){
         super(driver);
@@ -15,7 +17,7 @@ public class SearchPage extends PageBase {
     WebElement searchBtn;
 
     @FindBy(id="ui-id-1")
-    WebElement ProductList;
+    List<WebElement> ProductList;
 
     @FindBy(linkText = "Apple MacBook Pro 13-inch")
     WebElement productTitle;
@@ -31,4 +33,14 @@ public class SearchPage extends PageBase {
         clickButton(productTitle);
     }
 
+    public void ProductSearchUsingAutoComplete(String searchText)
+    {
+        typeText(searchTextBox,searchText);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        ProductList.get(0).click();
+    }
 }
