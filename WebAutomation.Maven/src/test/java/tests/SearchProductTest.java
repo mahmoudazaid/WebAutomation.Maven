@@ -16,6 +16,7 @@ public class SearchProductTest extends TestBase {
         searchObject = new SearchPage(driver);
         detailsObject = new ProductDetailsPage(driver);
         searchObject.productSearch(productname);
+        searchObject.openProductDetailsPage();
         Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(productname));
         Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(),productname);
     }

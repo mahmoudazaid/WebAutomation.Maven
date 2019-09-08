@@ -17,10 +17,18 @@ public class SearchPage extends PageBase {
     @FindBy(id="ui-id-1")
     WebElement ProductList;
 
+    @FindBy(linkText = "Apple MacBook Pro 13-inch")
+    WebElement productTitle;
+
     public void productSearch(String productName)
     {
         typeText(searchTextBox,productName);
         clickButton(searchBtn);
+    }
+
+    public void openProductDetailsPage()
+    {
+        clickButton(productTitle);
     }
 
 }
