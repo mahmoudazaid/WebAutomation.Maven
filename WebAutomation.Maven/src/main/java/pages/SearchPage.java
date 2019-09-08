@@ -39,7 +39,8 @@ public class SearchPage extends PageBase {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Error Occured: "+e.getMessage());
+
         }
         ProductList.get(0).click();
     }
