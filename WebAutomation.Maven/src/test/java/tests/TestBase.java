@@ -42,12 +42,11 @@ public class TestBase {
 
     // Take a screen when test case failed
     @AfterMethod
-    public void screenShotOnFailure(ITestResult result){
-        if (result.getStatus() == ITestResult.FAILURE)
-        {
+    public void screenShotOnFailure(ITestResult result) {
+        if (result.getStatus() == ITestResult.FAILURE) {
             System.out.println("Failed");
             System.out.println("Taking screenshot...");
-            utilities.Screenshot.captureScreenshot(driver,result.getName());
+            utilities.Screenshot.captureScreenshot(driver, result.getName());
         }
     }
 }
