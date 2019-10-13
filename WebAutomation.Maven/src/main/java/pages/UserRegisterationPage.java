@@ -43,6 +43,9 @@ public class UserRegisterationPage extends PageBase {
     @FindBy(xpath = "//div[@class='result']")
     public WebElement successMessage;
 
+    @FindBy(linkText = "Log out")
+    public WebElement logoutButton;
+
     public void userRegisteration(String firstName, String lastName, String email, String password, String confirmPassword) {
         clickButton(genderRadioBtn);
 
