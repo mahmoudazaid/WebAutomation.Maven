@@ -19,13 +19,19 @@ public class Driver extends AbstractTestNGCucumberTests {
 
         switch (browserName.toUpperCase()) {
             case "FIREFOX":
-//                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver.exe");
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
             case "CHROME":
-//                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
                 WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+                break;
+            case "IE":
+                WebDriverManager.iedriver().setup();
+                driver = new ChromeDriver();
+                break;
+            case "OPERA":
+                WebDriverManager.operadriver().setup();
                 driver = new ChromeDriver();
                 break;
             default:
@@ -45,35 +51,4 @@ public class Driver extends AbstractTestNGCucumberTests {
         driver.quit();
 
     }
-
-//    public static WebDriver driver;
-//
-//    private static enum Browsers {
-//        FIREFOX, CHROME, SAFARI;
-//    }
-//
-//    public static WebDriver OpenBrowser(String browserName) {
-//        browserName = (browserName != null) ? browserName : "CHROME";
-//
-//        switch (Browsers.valueOf(browserName.toUpperCase())) {
-//            case FIREFOX:
-//                FirefoxDriverManager.firefoxdriver().setup();
-//                driver = new FirefoxDriver();
-//                break;
-//            case CHROME:
-//                //System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-//                ChromeDriverManager.chromedriver().setup();
-//                driver = new ChromeDriver();
-//                break;
-//            case SAFARI:
-//                driver = new SafariDriver();
-//                break;
-//        }
-//        // maximize browser's window on start
-//        driver.manage().window().maximize();
-//
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        return driver;
-//    }
-//
 }

@@ -1,9 +1,9 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Regression Suite">
-    <parameter name="browser" value="Chrome"></parameter>
-    <test name="Regression Test">
-        <classes>
-            <class name="tests.SearchProductTest"/>
-        </classes>
-    </test>
-</suite>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--<suite name="Regression Suite">-->
+<!--    <parameter name="browser" value="Chrome"></parameter>-->
+<!--    <test name="Regression Test">-->
+<!--        <classes>-->
+<!--            <class name="tests.SearchProductTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->

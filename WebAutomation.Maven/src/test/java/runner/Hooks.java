@@ -1,10 +1,9 @@
-package stepDefinitions;
+package runner;
 
 import browser.Driver;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import utilities.LoadProperties;
 
 import static browser.Driver.driver;
 

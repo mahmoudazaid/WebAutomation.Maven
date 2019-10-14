@@ -1,11 +1,11 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Regression Suite">
-    <parameter name="browser" value="Firefox"></parameter>
-    <test name="Regression Test">
-        <classes>
-<!--            <class name="tests.UserRegisterationTest"/>-->
-            <class name="tests.SearchProductWithAutoComplete"/>
-            <class name="tests.SearchProductTest"/>
-        </classes>
-    </test>
-</suite>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--<suite name="Regression Suite">-->
+<!--    <parameter name="browser" value="Firefox"></parameter>-->
+<!--    <test name="Regression Test">-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="tests.UserRegisterationTest"/>&ndash;&gt;-->
+<!--            <class name="tests.SearchProductWithAutoComplete"/>-->
+<!--            <class name="tests.SearchProductTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
