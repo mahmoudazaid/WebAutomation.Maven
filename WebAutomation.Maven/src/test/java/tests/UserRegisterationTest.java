@@ -8,13 +8,13 @@ import pages.UserRegisterationPage;
 public class UserRegisterationTest extends TestBase {
 
     HomePage homeObject;
-    UserRegisterationPage userRegisterationObject;
+    UserRegisterationPage userRegistrationObject;
     @Test
     public void UserCanRegisterSuccessfully(){
         homeObject = new HomePage(driver);
-        homeObject.openRegisterationPage();
-        userRegisterationObject = new UserRegisterationPage(driver);
-        userRegisterationObject.userRegisteration("Mahmoud", "Abuzaid", "Testt100@test.com","123456","123456");
-        Assert.assertTrue(userRegisterationObject.successMessage.getText().contains("Your registration completed"));
+        homeObject.openRegistrationPage();
+        userRegistrationObject = new UserRegisterationPage(driver);
+        userRegistrationObject.userRegistration("Mahmoud", "Abuzaid", "Testt100@test.com","123456","123456");
+        Assert.assertTrue(userRegistrationObject.successMessage.getText().contains("Your registration completed"));
     }
 }

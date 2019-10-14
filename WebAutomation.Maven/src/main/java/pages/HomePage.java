@@ -13,7 +13,7 @@ public class HomePage extends PageBase {
     @FindBy(linkText = "Register")
     WebElement registerLink ;
 
-    public void openRegisterationPage(){
+    public void openRegistrationPage(){
         clickButton(registerLink);
     }
 }

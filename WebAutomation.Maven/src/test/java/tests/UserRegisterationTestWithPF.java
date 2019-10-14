@@ -9,7 +9,7 @@ import pages.UserRegisterationPage;
 public class UserRegisterationTestWithPF extends TestBase {
 
     HomePage homeObject;
-    UserRegisterationPage userRegisterationObject;
+    UserRegisterationPage userRegistrationObject;
     String fname = LoadProperties.userData.getProperty("firstname");
     String lname = LoadProperties.userData.getProperty("lastname");
     String email = LoadProperties.userData.getProperty("email");
@@ -17,9 +17,9 @@ public class UserRegisterationTestWithPF extends TestBase {
     @Test
     public void UserCanRegisterSuccessfully(){
         homeObject = new HomePage(driver);
-        homeObject.openRegisterationPage();
-        userRegisterationObject = new UserRegisterationPage(driver);
-        userRegisterationObject.userRegisteration(fname, lname, email,password,password);
-        Assert.assertTrue(userRegisterationObject.successMessage.getText().contains("Your registration completed"));
+        homeObject.openRegistrationPage();
+        userRegistrationObject = new UserRegisterationPage(driver);
+        userRegistrationObject.userRegistration(fname, lname, email,password,password);
+        Assert.assertTrue(userRegistrationObject.successMessage.getText().contains("Your registration completed"));
     }
 }

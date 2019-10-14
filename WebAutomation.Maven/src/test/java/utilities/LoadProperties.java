@@ -9,6 +9,8 @@ public class LoadProperties {
     //Load the properties file from the folder
 
     public static Properties userData = loadProperties(System.getProperty("user.dir")+"/src/main/java/properties/userdata.properties");
+    public static Properties environment = loadProperties(System.getProperty("user.dir")+"/src/main/java/properties/Environment.properties");
+
 
     private static Properties loadProperties(String path){
         Properties property = new Properties();

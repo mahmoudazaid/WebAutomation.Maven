@@ -12,9 +12,9 @@ import java.nio.file.Paths;
 
 public class Screenshot {
 
-    public static void captureScreenshot(WebDriver driver , String screenshotname)
+    public static void captureScreenshot(WebDriver driver , String screenShotName)
     {
-        Path dest = Paths.get("./Screenshots",screenshotname+".png");
+        Path dest = Paths.get("./Screenshots",screenShotName+".png");
         try
         {
             Files.createDirectories(dest.getParent());

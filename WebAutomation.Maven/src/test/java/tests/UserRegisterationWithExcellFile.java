@@ -12,7 +12,7 @@ import java.io.IOException;
 public class UserRegisterationWithExcellFile extends TestBase {
 
     HomePage homeObject;
-    UserRegisterationPage userRegisterationObject;
+    UserRegisterationPage userRegistrationObject;
 
     @DataProvider(name="ExcelData")
     public static Object[][] userData() throws IOException {
@@ -25,10 +25,10 @@ public class UserRegisterationWithExcellFile extends TestBase {
     @Test(priority = 1, alwaysRun = true, dataProvider = "ExcelData")
     public void UserCanRegisterSuccessfully(String fname, String lname, String email, String password) {
         homeObject = new HomePage(driver);
-        homeObject.openRegisterationPage();
-        userRegisterationObject = new UserRegisterationPage(driver);
-        userRegisterationObject.userRegisteration(fname, lname, email, password, password);
-        Assert.assertTrue(userRegisterationObject.successMessage.getText().contains("Your registration completed"));
-        userRegisterationObject.logoutButton.click();
+        homeObject.openRegistrationPage();
+        userRegistrationObject = new UserRegisterationPage(driver);
+        userRegistrationObject.userRegistration(fname, lname, email, password, password);
+        Assert.assertTrue(userRegistrationObject.successMessage.getText().contains("Your registration completed"));
+        userRegistrationObject.logoutButton.click();
     }
 }

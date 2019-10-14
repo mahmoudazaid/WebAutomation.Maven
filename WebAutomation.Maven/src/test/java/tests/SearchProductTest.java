@@ -6,7 +6,7 @@ import pages.ProductDetailsPage;
 import pages.SearchPage;
 
 public class SearchProductTest extends TestBase {
-    String productname="Apple MacBook Pro 13-inch";
+    String productName ="Apple MacBook Pro 13-inch";
     SearchPage searchObject;
     ProductDetailsPage detailsObject;
 
@@ -15,9 +15,9 @@ public class SearchProductTest extends TestBase {
     {
         searchObject = new SearchPage(driver);
         detailsObject = new ProductDetailsPage(driver);
-        searchObject.productSearch(productname);
+        searchObject.productSearch(productName);
         searchObject.openProductDetailsPage();
-        Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(productname));
-        Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(),productname);
+        Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(productName));
+        Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(), productName);
     }
 }

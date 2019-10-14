@@ -6,7 +6,7 @@ import pages.ProductDetailsPage;
 import pages.SearchPage;
 
 public class SearchProductWithAutoComplete extends TestBase {
-    String productname="Apple MacBook Pro 13-inch";
+    String productName ="Apple MacBook Pro 13-inch";
     SearchPage searchObject;
     ProductDetailsPage detailsObject;
 
@@ -16,6 +16,6 @@ public class SearchProductWithAutoComplete extends TestBase {
         searchObject = new SearchPage(driver);
         searchObject.ProductSearchUsingAutoComplete("Mac");
         detailsObject = new ProductDetailsPage(driver);
-        Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(productname));
+        Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(productName));
     }
 }

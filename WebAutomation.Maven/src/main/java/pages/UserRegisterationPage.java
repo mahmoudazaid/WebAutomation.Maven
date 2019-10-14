@@ -46,7 +46,7 @@ public class UserRegisterationPage extends PageBase {
     @FindBy(linkText = "Log out")
     public WebElement logoutButton;
 
-    public void userRegisteration(String firstName, String lastName, String email, String password, String confirmPassword) {
+    public void userRegistration(String firstName, String lastName, String email, String password, String confirmPassword) {
         clickButton(genderRadioBtn);
 
         typeText(firstNameTxt, firstName);

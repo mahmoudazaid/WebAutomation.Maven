@@ -12,7 +12,7 @@ import java.io.IOException;
 public class UserRegisterationWithCsvlFile extends TestBase {
 
     HomePage homeObject;
-    UserRegisterationPage userRegisterationObject;
+    UserRegisterationPage userRegistrationObject;
     CSVReader reader;
 
     @Test
@@ -30,11 +30,11 @@ public class UserRegisterationWithCsvlFile extends TestBase {
             String password = csvCell[3];
 
             homeObject = new HomePage(driver);
-            homeObject.openRegisterationPage();
-            userRegisterationObject = new UserRegisterationPage(driver);
-            userRegisterationObject.userRegisteration(firstName, lastName, email, password, password);
-            Assert.assertTrue(userRegisterationObject.successMessage.getText().contains("Your registration completed"));
-            userRegisterationObject.logoutButton.click();
+            homeObject.openRegistrationPage();
+            userRegistrationObject = new UserRegisterationPage(driver);
+            userRegistrationObject.userRegistration(firstName, lastName, email, password, password);
+            Assert.assertTrue(userRegistrationObject.successMessage.getText().contains("Your registration completed"));
+            userRegistrationObject.logoutButton.click();
         }
     }
 }
