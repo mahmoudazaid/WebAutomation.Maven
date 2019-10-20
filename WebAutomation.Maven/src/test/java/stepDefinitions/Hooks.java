@@ -5,10 +5,10 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.ITestResult;
-
 import static browser.Driver.driver;
 
 public class Hooks extends AbstractTestNGCucumberTests {
+    static String browserName="Chrome";
 
     @Before
     public static void openBrowser() {
