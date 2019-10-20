@@ -7,15 +7,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import utilities.LoadProperties;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 //
 public class Driver extends AbstractTestNGCucumberTests {
     public static WebDriver driver;
-    static String url = LoadProperties.environment.getProperty("URL");
+    static Properties environment = LoadProperties.loadProperties(System.getProperty("user.dir") + "/src/main/java/properties/Environment.properties");
+    static String browserName = environment.getProperty("browserName");
 
-
-    public static void openBrowser(String browserName) {
+    public static void openBrowser() {
 
         switch (browserName.toUpperCase()) {
             case "FIREFOX":
@@ -39,8 +40,8 @@ public class Driver extends AbstractTestNGCucumberTests {
         }
         // maximize browser's window on start
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.navigate().to(url);
+        driver.manage().timeouts().implicitlyWait(Long.parseLong(environment.getProperty("implicitlyWait")), TimeUnit.SECONDS);
+        driver.navigate().to(environment.getProperty("URL"));
     }
 
     public static void Visit(String _url) {
@@ -49,6 +50,5 @@ public class Driver extends AbstractTestNGCucumberTests {
 
     public static void CloseBrowser() {
         driver.quit();
-
     }
 }

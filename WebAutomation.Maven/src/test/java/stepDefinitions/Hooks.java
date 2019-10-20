@@ -1,26 +1,26 @@
-package runner;
+package stepDefinitions;
 
 import browser.Driver;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
 
 import static browser.Driver.driver;
 
 public class Hooks extends AbstractTestNGCucumberTests {
 
-    @BeforeSuite
-    @Parameters({"browser"})
-    public static void openBrowser(@Optional("Chrome") String browserName) {
-        Driver.openBrowser(browserName);
+    @Before
+    public static void openBrowser() {
+        Driver.openBrowser();
     }
 
-    @AfterSuite
+    @After
     public void closeBrowser() {
         Driver.CloseBrowser();
     }
 
-    @AfterMethod
+    @After
     public void screenShotOnFailure(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             System.out.println("Failed");
