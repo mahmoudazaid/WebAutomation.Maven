@@ -54,7 +54,7 @@ public class Email {
      * @param emailFolder Folder in email application to interact with
      */
     public Email(String username, String password, String server, EmailFolder emailFolder) throws MessagingException {
-        Properties emailProperties = LoadProperties.loadProperties(System.getProperty("user.dir") + "src/main/java/properties/email.properties");
+        Properties emailProperties = PropertiesReader.loadProperties(System.getProperty("user.dir") + "src/main/java/properties/email.properties");
 
         Session session = Session.getInstance(emailProperties);
         Store store = session.getStore("imaps");

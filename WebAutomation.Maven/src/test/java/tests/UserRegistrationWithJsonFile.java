@@ -11,7 +11,7 @@ import utilities.JsonReader;
 
 import java.io.IOException;
 
-public class UserRegisterationWithJsonFile extends TestBase {
+public class UserRegistrationWithJsonFile extends TestBase {
 
     HomePage homeObject;
     UserRegisterationPage userRegistrationObject;

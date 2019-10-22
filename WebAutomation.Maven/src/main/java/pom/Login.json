@@ -1,0 +1,12 @@
+[
+  {
+    "name": "login",
+    "locator": "xpath",
+    "value": "//a[contains(text(),'Login')]"
+  },
+  {
+    "name": "login2",
+    "locator": "xpath",
+    "value": "//a[contains(text(),'Login')]"
+  }
+]

@@ -4,7 +4,8 @@ Feature: User Registration
 
 
   Scenario: User Registration
-    Given I am on home page
-    When I click on register
-    And I entered registration data
-    Then The user has been registered successfully
+#    Given I am on home page
+#    When I click on register
+##    And I entered registration data
+    And I have entered "Test" into "First Name"
+#    Then The user has been registered successfully

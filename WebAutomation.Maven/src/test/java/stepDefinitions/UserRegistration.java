@@ -6,20 +6,27 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import pages.HomePage;
 import pages.UserRegisterationPage;
+import parser.ElementParser;
+
+import java.io.IOException;
 
 public class UserRegistration extends Driver {
-
     HomePage homeObject;
     UserRegisterationPage userRegistrationObject;
+    ElementParser parser = new ElementParser("Login.json");
 
     Faker fakeData = new Faker();
     String firstName = fakeData.name().firstName();
     String lastName = fakeData.name().lastName();
     String email = fakeData.internet().emailAddress();
     String password = fakeData.number().digits(8).toString();
+
+    public UserRegistration() throws IOException, ParseException {
+    }
 
     @Given("I am on home page")
     public void iAmOnHomePage() {
@@ -42,7 +49,12 @@ public class UserRegistration extends Driver {
     @And("I entered registration data")
     public void iEnteredRegistrationData() {
         userRegistrationObject = new UserRegisterationPage(driver);
-        userRegistrationObject.userRegistration(firstName,lastName,email,password,password);
-        System.out.println("The registration data: " + firstName +", "+lastName+", "+email+", "+password);
+        userRegistrationObject.userRegistration(firstName, lastName, email, password, password);
+        System.out.println("The registration data: " + firstName + ", " + lastName + ", " + email + ", " + password);
+    }
+
+    @And("I have entered {string} into {string}")
+    public void iHaveEnteredInto(String text, String element) throws IOException, ParseException {
+        parser.getElementDetails("login");
     }
 }

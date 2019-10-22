@@ -1,6 +1,6 @@
 package tests;
 
-import utilities.LoadProperties;
+import utilities.PropertiesReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -10,10 +10,10 @@ public class UserRegisterationTestWithPF extends TestBase {
 
     HomePage homeObject;
     UserRegisterationPage userRegistrationObject;
-    String fname = LoadProperties.userData.getProperty("firstname");
-    String lname = LoadProperties.userData.getProperty("lastname");
-    String email = LoadProperties.userData.getProperty("email");
-    String password = LoadProperties.userData.getProperty("password");
+    String fname = PropertiesReader.userData.getProperty("firstname");
+    String lname = PropertiesReader.userData.getProperty("lastname");
+    String email = PropertiesReader.userData.getProperty("email");
+    String password = PropertiesReader.userData.getProperty("password");
     @Test
     public void UserCanRegisterSuccessfully(){
         homeObject = new HomePage(driver);

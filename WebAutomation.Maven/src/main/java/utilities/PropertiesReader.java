@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class LoadProperties {
+public class PropertiesReader {
     //Load the properties file from the folder
 
     public static Properties userData = loadProperties(System.getProperty("user.dir") + "/src/main/java/properties/userdata.properties");

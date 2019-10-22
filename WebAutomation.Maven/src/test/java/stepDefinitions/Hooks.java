@@ -5,6 +5,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+
 import static browser.Driver.driver;
 
 public class Hooks extends AbstractTestNGCucumberTests {
@@ -20,7 +22,7 @@ public class Hooks extends AbstractTestNGCucumberTests {
         Driver.CloseBrowser();
     }
 
-    @After
+    @AfterClass
     public void screenShotOnFailure(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             System.out.println("Failed");
