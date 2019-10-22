@@ -101,6 +101,13 @@
             <version>1.6.2</version>
         </dependency>
         <!--End Email Dependencies-->
+        <!--Json Dependency-->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!--End Json Dependency-->
     </dependencies>
 
     <build>
