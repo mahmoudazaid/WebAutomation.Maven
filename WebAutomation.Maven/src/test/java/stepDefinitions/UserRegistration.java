@@ -11,13 +11,14 @@ import org.testng.Assert;
 import pages.HomePage;
 import pages.UserRegisterationPage;
 import parser.ElementParser;
+import parser.ParserManager;
 
 import java.io.IOException;
 
 public class UserRegistration extends Driver {
     HomePage homeObject;
     UserRegisterationPage userRegistrationObject;
-    ElementParser parser = new ElementParser("Login.json");
+    ParserManager parser = new ParserManager(new String[]{"Login.json","Login2.json"});
 
     Faker fakeData = new Faker();
     String firstName = fakeData.name().firstName();
